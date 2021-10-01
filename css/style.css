@@ -26,9 +26,9 @@ body {
     font-size: 14px;
 }
 #choro_frame {
-    background: #f78888;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    background: #eaf6ff;
+    margin-bottom: 15px;
+    margin-top: 15px;
     padding: 20px;
 }
 #choropleth_map {
