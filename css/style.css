@@ -28,6 +28,8 @@ body {
 #choro_frame {
     background: #f78888;
     background-position: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
     padding: 20px;
 }
 #choropleth_map {
