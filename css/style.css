@@ -1,1 +1,80 @@
-
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+body {
+    background-color: white;
+}
+.page {
+    width: 1200px;    
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+.description-left {
+    padding-right: 20px;
+}
+.pure-g {
+    margin-bottom: 25px;
+}
+.small-font {
+    font-size: 14px;
+}
+}
+#choro_frame {
+    background-color: #eaf6ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#choropleth_map {
+    padding-right: 10px;
+}
+#banner {
+    padding: 20px;
+    background: #20445f;
+    background-position: center;
+    color: white;
+}
+#end_credit {
+    background: #20445f;
+    color: white;
+    padding: 20px;
+}
+.vega-bind {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+select {
+    background-color: white;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:visited {
+    color: #f78888;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* #f3e199*/
