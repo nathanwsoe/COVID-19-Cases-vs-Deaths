@@ -28,10 +28,7 @@ body {
 }
 #choro_frame {
     background-color: #eaf6ff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 20px;
 }
 #choropleth_map {
     padding-right: 10px;
