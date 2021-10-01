@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 700,
+    "width": 600,
     "height": 500,
-    "title": "Correlation Between Cases and Deaths",
+    "title": "Correlation Between Cases and Vaccinations",
     "data": {
-      "url": "https://raw.githubusercontent.com/nathanwsoe/Assignment-2/main/data/cases_and_deaths_cleaned.csv"
+      "url": "https://raw.githubusercontent.com/nathanwsoe/COVID19_Cases_vs_Deaths/main/data/owid-covid-data_cleanedv2.csv"
     },
     "params": [
       {
@@ -46,7 +46,7 @@
     ],
     "transform": [
       {"filter": "datum.total_cases > 0"},
-      {"filter": "datum.total_deaths > 0"},
+      {"filter": "datum.total_vaccinations > 0"},
       {"filter": "datum.population > population_above"},
       {"filter": "continent_selection == null || datum.continent == continent_selection"},
         {
@@ -54,8 +54,8 @@
           "as": "Total Cases (per 100,000 population)"
         },
         {
-          "calculate": "datum.total_deaths_per_million / 10",
-          "as": "Total Deaths (per 100,000 population)"
+          "calculate": "datum.total_vaccinations / datum.population * 100000",
+          "as": "Total Vaccinations (per 100,000 population)"
         }
     ],
     "encoding": {
@@ -67,11 +67,11 @@
         "title": "Total Cases"
       },
       "y": {
-        "field": "total_deaths",
+        "field": "total_vaccinations",
         "type": "quantitative",
-        "axis": {"tickCount": 6},
-        "scale": {"type": "log", "domain": [1, 1000000]},
-        "title": "Total Deaths"
+        "axis": {"tickCount": 9},
+        "scale": {"type": "log", "domain": [1, 10000000000]},
+        "title": "Total Vaccinations"
       }
     },
     "layer": [
@@ -128,8 +128,8 @@
             {"field": "continent", "type": "nominal", "title": "Continent"},
             {"field": "total_cases", "type": "quantitative", "format": ",.2f", "title": "Total Cases"},
             {"field": "Total Cases (per 100,000 population)", "type": "quantitative", "format": ",.2f"},
-            {"field": "total_deaths", "type": "quantitative", "format": ",.2f", "title": "Total Deaths"},
-            {"field": "Total Deaths (per 100,000 population)", "type": "quantitative", "format": ",.2f"}
+            {"field": "total_vaccinations", "type": "quantitative", "format": ",.2f", "title": "Total Vaccinations"},
+            {"field": "Total Vaccinations (per 100,000 population)", "type": "quantitative", "format": ",.2f"}
           ]
         }
       },
@@ -147,7 +147,7 @@
           "color": {"value": "black"},
           "opacity": {
             "condition": {
-              "test": "datum.location == 'Brazil' || datum.location == 'Tanzania' || datum.location == 'Yemen' || datum.location == 'Singapore' || datum.location == 'Ecuador' || datum.location == 'Qatar' ||  datum.location == 'Ukraine' ||  datum.location == 'Bhutan'",
+              "test": "datum.location == 'Brazil' || datum.location == 'Tanzania' || datum.location == 'New Zealand' || datum.location == 'Singapore' || datum.location == 'China' || datum.location == 'India' ||  datum.location == 'South Korea' ||  datum.location == 'Haiti'",
               "value": 1
             },
             "value": 0
