@@ -27,7 +27,8 @@ body {
 }
 }
 #choro_frame {
-    background-color: #eaf6ff;
+    background: #f78888;
+    background-position: center;
     padding: 20px;
 }
 #choropleth_map {
