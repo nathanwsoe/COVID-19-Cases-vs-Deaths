@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19, Visualized</title>
 
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+</head>
+<body>
+    <div class="page">
+        <!-- pure grid group -->
+        <div class="pure-g" id="banner">
+        <div class="pure-u-1-1">
+            <h1>COVID-19, Visualized</h1>
+            <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+               Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without 
+               special treatment. However, some will become seriously ill and require medical attention.</p>
+        </div>
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g" id="choro_frame">
+        <div class="pure-u-1-1">
+            <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+               Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without 
+               special treatment. However, some will become seriously ill and require medical attention.</p>
+            <div id="choropleth_map"></div>
+            <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+               Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without 
+               special treatment. However, some will become seriously ill and require medical attention.</p>
+            <div id="scatter_plot"></div>
+        </div>
+        </div>
+        <!-- end pure grid group -->
+       
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-1" id="end_credit">
+            <p>This visualisation is created by <a href="https://github.com/nathanwsoe" target="_blank">Nathan William Soegiarto</a></href>.</p>
+            </div>
+        </div>
+        <!-- end pure grid group -->
+    </div> <!-- end page -->
+
+<script type="text/javascript">
+    var vis1 = "js/choropleth_map.vl.json";
+    var vis2 = "js/scatter_plot.vl.json"
+
+    vegaEmbed('#choropleth_map', vis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#scatter_plot', vis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+</script>
+</body>
+</html>
