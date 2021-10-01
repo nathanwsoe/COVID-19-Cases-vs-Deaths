@@ -154,8 +154,5 @@
           }
         }
       }
-    ],
-      "config": {
-          "background": "#eaf6ff"
-        }
+    ]
   }
