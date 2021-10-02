@@ -3,7 +3,7 @@
     "width": 900,
     "height": 700,
     "data": {
-      "url": "https://raw.githubusercontent.com/nathanwsoe/COVID19_Cases_vs_Deaths/main/data/owid-covid-data_cleanedv2.csv"
+      "url": "https://raw.githubusercontent.com/nathanwsoe/COVID19_cases_vs_vaccinations/main/data/owid-covid-data_cleanedv2.csv"
     },
     "params": [
       {
