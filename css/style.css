@@ -1,10 +1,11 @@
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 800;
 }
 h2 {
     font-family: 'Poppins', sans-serif;
+    font-size: 30px;
     font-weight: 700;
 }
 body {
@@ -16,9 +17,6 @@ body {
     padding: 50px;
     padding-top: 35px;
 }
-.description-left {
-    padding-right: 20px;
-}
 .pure-g {
     margin-bottom: 25px;
 }
@@ -26,13 +24,16 @@ body {
     font-size: 14px;
 }
 #choro_frame {
-    background: #eaf6ff;
+    background: #ddeefa;
     margin-bottom: 15px;
     margin-top: 15px;
     padding: 20px;
 }
 #choropleth_map {
     padding-right: 10px;
+}
+#scatter_frame {
+    padding-top: 20px;
 }
 #banner {
     padding: 20px;
