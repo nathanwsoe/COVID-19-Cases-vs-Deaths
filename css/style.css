@@ -54,22 +54,18 @@ select {
     background-color: white;
 }
 a:link {
-    color: white;
+    color: #f78888;
     background-color: transparent;
-    text-decoration: underline;
 }
 a:visited {
     color: #f78888;
     background-color: transparent;
-    text-decoration: underline;
 }
 a:hover {
-    color: white;
+    color: #fec4c4;
     background-color: transparent;
-    text-decoration: underline;
 }
 a:active {
-    color: white;
+    color: #f78888;
     background-color: transparent;
-    text-decoration: underline;
 }
